@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullCodeView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_languagecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Language of Code :- "
+                android:textColor="#000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_set_language_of_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tv_languagecode"
+                android:textColor="#000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_author_of_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_languagecode"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Author :- "
+                android:textColor="#000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_set_author_of_code"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_languagecode"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tv_author_of_code"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_author_of_code"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Code :-"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/tv_set_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_code"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:textIsSelectable="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
